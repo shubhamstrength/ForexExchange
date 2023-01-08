@@ -1,0 +1,32 @@
+header {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+}
+
+body{
+  background: #e6e4e4;
+  color: #404040;
+}
+
+.m-top {
+  margin-top: 100px;
+}
+
+.convert-form{
+  display: flex;
+  gap:50px
+}
+
+.line {
+  width: 100%;
+  border-bottom: 1px solid #acaaaa;
+}
+.covertedVal {
+  color: #94C720;
+}
+
+.conversionText {
+  display: flex;
+  justify-content: center;
+}
