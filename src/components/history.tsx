@@ -7,7 +7,7 @@ import MatTable from './table';
 const History: React.FC = ({}) => {
 
 const { getAll } = useIndexedDB('forex');
-const [forexData, setForexData] = useState<ConversionHistory[]>([]);
+const [forexData, setForexData] = useState<any[]>([]);
 
 useEffect(() => {
   getAll().then(dataFromDB => {

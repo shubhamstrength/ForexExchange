@@ -12,7 +12,7 @@ interface MatTableProps {
     renenderDataOnDelete?: Function;
 }
 
-const MatTable: React.FC<MatTableProps> = ({rates, currency, headers, data, type, renenderDataOnDelete}) => {
+const MatTable: React.FC<any> = ({rates, currency, headers, data, type, renenderDataOnDelete}) => {
   const { deleteRecord, getAll } = useIndexedDB('forex');
   let rows: any = [];
 
@@ -41,7 +41,7 @@ const MatTable: React.FC<MatTableProps> = ({rates, currency, headers, data, type
             </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row: ConversionHistory) => (
+          {rows.map((row: any) => (
             <TableRow
               key={row.date + row.id}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
