@@ -11,7 +11,7 @@
     "test": "vitest",
     "coverage": "vitest --coverage",
     "predeploy" : "yarn build",
-    "deploy" : "gh-pages -d build"
+    "deploy" : "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
