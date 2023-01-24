@@ -23,6 +23,10 @@ const router = createBrowserRouter([
     element: <ForexApp />,
   },
   {
+    path: "/ForexExchange",
+    element: <ForexApp />,
+  },
+  {
     path: "/forex",
     element: <ForexApp />,
   },
@@ -40,6 +44,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <Route path="/history" element={<HistoryApp />} />
       <Route path="/forex" element={<ForexApp />} />
       <Route path="/" element={<ForexApp />} />
+      <Route path="/ForexExchange" element={<ForexApp />} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>,
